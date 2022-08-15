@@ -1,0 +1,211 @@
+@media (max-width: 768px) {
+    body {  
+      min-width: 250px;
+      max-width: 100vw;
+    }
+  
+    .player-name,
+    input[type="range"],
+    .player-time,
+    .player-minimize {
+      display: none;
+    }
+  
+    .player-controls > * {
+      margin-right: 0;
+    }
+  
+    .player-controls {
+      margin-right: 10px;
+      padding: 15px;
+      border-radius: 10px;
+    }
+  
+    .weather {
+      width: 130px;
+    }
+  
+    .city {
+      width: 100%;
+    }
+  
+    .time {
+      min-height: 80px;
+      margin: 0;
+    }
+  
+    .date {
+      margin: 0;
+    }
+  
+    .greeting {
+      padding: 5px;
+    }
+  
+    .change-quote {
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+      margin-bottom: 10px;
+    }
+  
+    .footer {
+      min-height: 0;
+    }
+  
+    .author {
+      min-height: 0;
+    }
+  
+    .set-toggle {
+      width: 20px;
+      height: 20px;
+    }
+  
+  
+    .set-inner-container {
+      bottom: 25px;
+    }
+  
+    .footer {
+      grid-template-columns: 50px 1fr 50px;
+    }
+  
+    .set-btn-list {
+      padding-top: 10px;
+    }
+  
+    .set-btn {
+      padding: 10px;
+    }
+  
+    .set-btn:first-child {
+      border-top-left-radius: 0;
+    }
+  
+    .set-container {
+      width: 170px;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  
+    .set-lang-box h3,
+    .set-background-box h3 {
+      margin-bottom: 10px;
+    }
+  
+    .lang-input-container label,
+    .background-input-container label {
+      padding: 0 10px;
+      line-height: 25px;
+      margin-top: 10px;
+    }
+  
+    .set-box  {
+      width: 130px;
+    }
+  
+  }
+  
+  @media (max-width: 400px) {
+    body {
+      font-size: 10px;
+    }
+    .links {
+      font-size: 1.5em;
+    }
+  }
+  @media (max-width: 1024px) {
+    body {
+      font-size: 12px;
+    }
+  
+    .header {
+      min-height: 0;
+    }
+  
+    .play-list {
+      max-height: 15vh;
+    }
+  
+    input[type="range"] {
+      height: 4px;
+    }
+  
+    input[type="range"]::-webkit-slider-thumb  {
+      width: 6px;
+      height: 6px;
+    }
+  
+    #player-progress-bar {
+      width: 170px;
+    }
+  
+    #range-volume {
+      width: 50px;
+    }
+  
+    .player-minimize {
+      width: 15px;
+    }
+  
+    .player-icon {
+      width: 25px;
+      height: 25px;
+      background-size: contain;
+    }
+  
+    .play {
+      width: 32px;
+      height: 32px;
+    }
+  
+    .player-volume {
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+    }
+  
+    .box-input-container label::after {
+      bottom: 1px;
+    }
+  
+    .weather {
+      min-height: 100px;
+    }
+  
+    .main {
+      min-height: 0;
+    }
+  
+    .links {
+      font-size: 1.3em;
+    }
+  }
+  
+@media (max-width: 1200px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .set-container {
+      width: 200px;
+    }
+    .set-box {
+      width: 160px;
+    }
+    .box-input-container label::after {
+      bottom: 3px;
+    }
+  
+    .time {
+      min-height: 50px;
+    }
+  
+    .date {
+      min-height: 15px;
+    }
+  
+    .greeting-container {
+      min-height: 25px;
+    }
+  }
