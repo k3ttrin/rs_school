@@ -1,1 +1,1 @@
-# rs_school
+https://k3ttrin.github.io/rs_school/
