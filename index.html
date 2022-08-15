@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="assets/favicon.ico" rel="shortcut icon"/>
+<link rel="stylesheet" href="owfont-regular.css"/>
+<link rel="stylesheet" href="font.css"/>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="style1200.css"/>
+<title>Momentum</title><script defer="defer" src="j.js"></script>
+
+</head>
+<body>
+<header class="header">
+<div class="player"><p class="player-name"></p><div class="player-controls">
+<button class="play-prev player-icon"></button> 
+<button class="play player-icon"></button> 
+<button class="play-next player-icon"></button> 
+<input type="range" id="player-progress-bar" name="progress-audio" value="0" min="0" max="100" step="0.1">
+<p class="player-time"><span class="player-current-time">0:00</span> / <span class="player-duration">0:00</span></p>
+<button class="player-volume-yes player-volume player-icon"></button> <input type="range" id="range-volume" name="range-volume" value="70" min="0" max="100" step="1"> 
+<button class="player-minimize"><span class="line"></span></button></div><ul class="play-list active"></ul></div><div class="weather"><input class="city"/> 
+<i class="weather-icon owf"></i><div class="weather-error"></div><div class="description-container"><span class="temperature"></span> 
+<span class="weather-description"></span>
+</div><div class="wind"></div>
+<div class="humidity"></div></div>
+</header>
+<main class="main">
+<div class="slider-icons"><button class="slide-prev slider-icon"></button> 
+<button class="slide-next slider-icon"></button></div><time class="time"></time>
+<date class="date"></date><div class="greeting-container"><span class="greeting"></span> 
+<input class="name" placeholder="[Enter name]"/></div></main>
+<footer class="footer"><div class="set-wrapper">
+<div class="set-inner-container">
+<ul class="set-btn-list">
+<li class="set-btn set-lang-btn active">Language</li>
+<li class="set-btn set-background-btn">Background</li>
+<li class="set-btn set-show-btn">Show</li>
+<li class="set-btn set-about-btn">About</li></ul>
+<ul class="set-container">
+<li class="set-lang-box set-box active">
+<h3 class="set-box-title">Language</h3>
+<div class="lang-input-container">
+<input type="radio" name="language" id="set-lang-en" checked="checked"> 
+<label for="set-lang-en">English</label></div>
+<div class="lang-input-container">
+<input type="radio" name="language" id="set-lang-ru"> 
+<label for="set-lang-ru">Русский</label></div></li>
+<li class="set-background-box set-box">
+<h3 class="set-box-title">Background</h3>
+<div class="background-input-container">
+<input type="radio" name="background" id="set-bg-git" checked="checked"> 
+<label for="set-bg-git">GitHub</label></div>
+<div class="background-input-container"><input type="radio" name="background" id="set-bg-unsplash">
+ <label for="set-bg-unsplash">Unsplash</label></div><div class="background-input-container">
+    <input type="radio" name="background" id="set-bg-flickr"> 
+    <label for="set-bg-flickr">Flickr</label></div></li>
+    <li class="set-show-box set-box">
+ <h3 class="set-box-title">Show</h3>
+<div class="box-input-container">
+    <input type="checkbox" name="show-player" id="set-show-player" checked="checked"> 
+    <label for="set-show-player">Audio player</label></div><div class="box-input-container">
+        <input type="checkbox" name="show-weather" id="set-show-weather" checked="checked"> 
+        <label for="set-show-weather">Weather</label></div><div class="box-input-container">
+            <input type="checkbox" name="show-time" id="set-show-time" checked="checked"> 
+            <label for="set-show-time">Time</label></div><div class="box-input-container">
+                <input type="checkbox" name="show-date" id="set-show-date" checked="checked"> 
+                <label for="set-show-date">Date</label></div><div class="box-input-container">
+                    <input type="checkbox" name="show-greeting" id="set-show-greeting" checked="checked"> 
+                    <label for="set-show-greeting">Greeting</label></div><div class="box-input-container">
+                        <input type="checkbox" name="show-quote" id="set-show-quote" checked="checked"> 
+                        <label for="set-show-quote">Quote</label></div><div class="box-input-container">
+                            <input type="checkbox" name="show-quote" id="set-show-links" checked="checked"> 
+                            <label for="set-show-links">Links</label></div></li><li class="set-about-box set-box">
+                                <h3 class="set-box-title">About</h3>
+                                <p class="about-year">&#169; 2022</p><a href="https://github.com/k3ttrin" class="about-git" target="_blank">k3ttrin</a> 
+                                <a href="https://rs.school/js/" class="about-rsschool" target="_blank"></a></li></ul></div><button class="set-toggle"></button></div>
+                                <div class="quote-wrapper"><button class="change-quote"></button>
+                                    <div><div class="quote"></div>
+                                    <div class="author"></div>
+                                </div></div><div class="links"><div class="links-wrapper"><div class="links-inner-cotainer">
+                                        <div class="links-list active"><div class="links-item link-newtab">
+                                            <a href="chrome://newtab/" target="_blank">New tab</a></div><ul class="links-custom-list">
+                                                <li class="links-item"><a href="asd">Test</a> <span class="edit-link-btn"></span></li></ul>
+                                                <div class="new-link-btn">New link</div><ul class="links-edit-menu">
+                                                    <li class="links-menu-edit">Edit</li>
+                                                    <li class="links-menu-delete">Delete</li></ul></div><div class="new-link-wrapper">
+                                                        <button class="new-link-back"></button> 
+                                                        <label for="link-name">Name</label> 
+                                                        <input name="link-name" id="link-name" required> <label for="link-reference">Link</label>
+                                                         <input name="link-reference" id="link-reference" placeholder="example.com" required> 
+                                                         <button class="new-link-create">Create</button></div></div></div>
+                                                         <button class="links-toggle" type="button">Links</button></div></footer></body>
+                                                         </html>
